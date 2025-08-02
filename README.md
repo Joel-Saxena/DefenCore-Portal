@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SSPL_Dashboard
 # DRDO Scientist Records Dashboard
 
@@ -50,3 +51,7 @@ README.md → Project documentation
 **Planning Stage** – Requirements being gathered and architecture being designed. Development to begin soon.
 
 ---
+=======
+# DefenCore-Portal
+A secure full-stack internal portal for DRDO-like organizations with supervisor/admin dashboards, real-time monitoring, and role-based access control.
+>>>>>>> f7ea11cda56f52387b24f311a2f9dbcd6988f4e8
