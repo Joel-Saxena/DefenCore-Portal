@@ -5,7 +5,7 @@ const cors = require('cors');
 
 // Configure CORS with specific options
 const corsOptions = {
-  origin: 'http://localhost:5173',  // Your frontend URL
+  origin: ['http://localhost:5173', 'https://defencore-frontend.vercel.app'], // Your frontend URL
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,  // Allow cookies/session if needed later
   optionsSuccessStatus: 204  // Legacy browser support
