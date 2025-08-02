@@ -33,7 +33,7 @@ export default function AdminDashboard() {
     const fetchScientists = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('http://localhost:5000/api/admin/scientists', {
+        const response = await axios.get('https://defencore-backend.onrender.com/api/admin/scientists', {
           headers: { Authorization: `Bearer ${token}` },
           params: { group_id: groupId }
         });
@@ -54,7 +54,7 @@ export default function AdminDashboard() {
     if (searchTerm.trim() === '') return;
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/admin/search', {
+      const response = await axios.get('https://defencore-backend.onrender.com/api/admin/search', {
         headers: { Authorization: `Bearer ${token}` },
         params: { ScientistName: searchTerm, admin_group_id: groupId }
       });

@@ -72,7 +72,7 @@ export default function SupervisorDashboard() {
     const fetchHierarchy = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/supervisor/groups', {
+        const response = await axios.get('https://defencore-backend.onrender.com/api/supervisor/groups', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setHierarchy(response.data.hierarchy);
@@ -99,7 +99,7 @@ export default function SupervisorDashboard() {
       const config = { headers: { Authorization: `Bearer ${token}` } };
 
       if (activeForm === 'group') {
-        await axios.post('http://localhost:5000/api/supervisor/group', formData, config);
+        await axios.post('https://defencore-backend.onrender.com/api/supervisor/group', formData, config);
       } else if (activeForm === 'admin') {
         const payload = {
           employeeData: {
@@ -115,7 +115,7 @@ export default function SupervisorDashboard() {
           group_id: formData.group_id,
           supervisor_id: formData.supervisor_id || null,
         };
-        await axios.post('http://localhost:5000/api/supervisor/admin', payload, config);
+        await axios.post('https://defencore-backend.onrender.com/api/supervisor/admin', payload, config);
       } else if (activeForm === 'scientist') {
         const payload = {
           employeeData: {
@@ -133,9 +133,9 @@ export default function SupervisorDashboard() {
           category: formData.category,
           research_area: formData.research_area,
         };
-        await axios.post('http://localhost:5000/api/supervisor/scientist', payload, config);
+        await axios.post('https://defencore-backend.onrender.com/api/supervisor/scientist', payload, config);
       } else if (activeForm === 'assignAdmin') {
-        await axios.put('http://localhost:5000/api/supervisor/admin/group', formData, config);
+        await axios.put('https://defencore-backend.onrender.com/api/supervisor/admin/group', formData, config);
       }
       setRefreshKey(prev => prev + 1);
       handleCancel();
