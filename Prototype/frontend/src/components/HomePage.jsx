@@ -86,7 +86,7 @@ export default function AdminLanding() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#e7ecf3]">
+    <div className="min-h-screen bg-gradient-to-br from-[#f0f5ff] to-[#cad7eb]">
       {/* Header - Maintained original styling */}
       <motion.div 
         initial={{ y: -50 }}
@@ -106,7 +106,7 @@ export default function AdminLanding() {
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-[90vh] flex items-center">
         {/* Subtle grid background */}
-        <div className="absolute inset-0 z-0 opacity-5 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMCAwaDQwdjQwSDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTAgMGgyMHYyMEgwek00MCA0MGgtMjB2LTIwaDIweiIgZmlsbD0iIzFiMjk0MCIgb3BhY2l0eT0iMC4xIi8+PC9zdmc+')]"></div>
+        <div className="absolute inset-0 z-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48cGF0aCBkPSJNMCAwaDQwdjQwSDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTAgMGgyMHYyMEgwek00MCA0MGgtMjB2LTIwaDIweiIgZmlsbD0iIzFiMjk0MCIgb3BhY2l0eT0iMC4xIi8+PC9zdmc+')]"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10 w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -144,7 +144,7 @@ export default function AdminLanding() {
                   <motion.div 
                     key={index}
                     whileHover={{ y: -5 }}
-                    className="bg-white p-3 rounded-lg shadow-sm border border-[#e2e8f0]"
+                    className="bg-gradient-to-br from-white to-[#f7faff] p-3 rounded-lg shadow-sm border border-[#e2e8f0] hover:border-[#c9d8ff] transition-all"
                   >
                     <div className="text-xl md:text-2xl font-bold text-[#1b2940]">{stat.value}</div>
                     <div className="text-xs md:text-sm text-[#4a5568]">{stat.label}</div>
@@ -160,7 +160,7 @@ export default function AdminLanding() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="w-full lg:w-[40%] max-w-md"
             >
-              <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-[#e2e8f0]">
+              <div className="bg-gradient-to-br from-white to-[#f7faff] rounded-xl shadow-xl overflow-hidden border border-[#e2e8f0] hover:shadow-lg transition-all">
                 <div className="bg-[#1b2940] p-6 text-white border-b border-[#4a6fa5]">
                   <div className="flex items-center justify-between">
                     <h2 className="text-xl font-bold flex items-center">
@@ -193,7 +193,7 @@ export default function AdminLanding() {
                       <button
                         onClick={handleAdminLogin}
                         disabled={isAuthenticating}
-                        className={`relative flex justify-center items-center py-3 px-8 rounded-lg shadow text-base font-semibold text-white bg-[#1b2940] hover:bg-[#2c5282] focus:outline-none focus:ring-2 focus:ring-[#63b3ed] focus:ring-offset-2 transition-all ${isAuthenticating ? 'opacity-90' : ''}`}
+                        className={`relative flex justify-center items-center py-3 px-8 rounded-lg shadow text-base font-semibold text-white bg-gradient-to-r from-[#1b2940] to-[#2c5282] hover:from-[#2c5282] hover:to-[#1b2940] focus:outline-none focus:ring-2 focus:ring-[#63b3ed] focus:ring-offset-2 transition-all ${isAuthenticating ? 'opacity-90' : ''}`}
                       >
                         {isAuthenticating ? (
                           <>
@@ -239,7 +239,7 @@ export default function AdminLanding() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <div className="bg-white rounded-xl shadow-md overflow-hidden border border-[#e2e8f0]">
+          <div className="bg-gradient-to-br from-white to-[#f7faff] rounded-xl shadow-md overflow-hidden border border-[#e2e8f0] hover:shadow-lg transition-all">
             <div className="grid md:grid-cols-2">
               <div className="p-8 md:p-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#1b2940] mb-6">
@@ -253,7 +253,7 @@ export default function AdminLanding() {
                   <div className="space-y-3 mt-6">
                     {securityFeatures.map((feature, index) => (
                       <div key={index} className="flex items-start">
-                        <div className="flex-shrink-0 bg-[#ebf8ff] p-2 rounded-lg mr-3">
+                        <div className="flex-shrink-0 bg-gradient-to-br from-[#ebf8ff] to-[#d6e9ff] p-2 rounded-lg mr-3 shadow-sm">
                           {feature.icon}
                         </div>
                         <div>
@@ -330,7 +330,7 @@ export default function AdminLanding() {
                   whileHover={{ y: -5 }}
                   className="relative"
                 >
-                  <div className="relative h-full bg-white p-6 rounded-lg shadow-md border border-[#e2e8f0] hover:border-[#c9d8ff] transition-all duration-300 overflow-hidden">
+                  <div className="relative h-full bg-gradient-to-b from-white to-[#f7faff] p-6 rounded-lg shadow-md border border-[#e2e8f0] hover:border-[#c9d8ff] transition-all duration-300 overflow-hidden group">
                     {/* Animated border */}
                     <motion.div 
                       initial={{ width: 0 }}
@@ -341,7 +341,7 @@ export default function AdminLanding() {
                     
                     {/* Icon container */}
                     <div className="mb-6 relative">
-                      <div className="w-14 h-14 rounded-lg bg-[#ebf8ff] shadow-inner flex items-center justify-center">
+                      <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-[#ebf8ff] to-[#d6e9ff] shadow-inner flex items-center justify-center group-hover:from-[#d6e9ff] group-hover:to-[#ebf8ff] transition-all">
                         {feature.icon}
                       </div>
                     </div>
@@ -363,7 +363,7 @@ export default function AdminLanding() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="mt-16 flex justify-center"
             >
-              <div className="inline-flex items-center bg-[#ebf8ff] px-5 py-2 rounded-full border border-[#bee3f8] shadow-sm">
+              <div className="inline-flex items-center bg-gradient-to-r from-[#ebf8ff] to-[#d6e9ff] px-5 py-2 rounded-full border border-[#bee3f8] shadow-sm hover:shadow-md transition-all">
                 <FiShield className="text-[#1b2940] mr-2" size={18} />
                 <span className="font-medium text-[#1b2940] text-sm">ISO 27001 Certified Security</span>
               </div>
@@ -377,13 +377,13 @@ export default function AdminLanding() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="bg-[#ebf8ff] border border-[#bee3f8] rounded-xl p-6 max-w-4xl mx-auto shadow-sm"
+          className="bg-gradient-to-br from-[#ebf8ff] to-[#d6e9ff] border border-[#bee3f8] rounded-xl p-6 max-w-4xl mx-auto shadow-sm hover:shadow-md transition-all"
         >
           <div className="flex flex-col sm:flex-row">
             <motion.div 
               animate={{ rotate: [0, 10, -10, 0] }}
               transition={{ repeat: Infinity, repeatType: "mirror", duration: 3 }}
-              className="flex-shrink-0 bg-[#1b2940] p-3 rounded-lg shadow-sm mb-4 sm:mb-0 sm:mr-6 self-start"
+              className="flex-shrink-0 bg-gradient-to-br from-[#1b2940] to-[#2c5282] p-3 rounded-lg shadow-sm mb-4 sm:mb-0 sm:mr-6 self-start"
             >
               <FiShield className="h-6 w-6 text-white" />
             </motion.div>
