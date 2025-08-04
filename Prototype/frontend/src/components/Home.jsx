@@ -67,7 +67,7 @@ const Home = () => {
             <span className="font-extrabold tracking-widest text-xl lg:text-2xl uppercase"
                   style={{ letterSpacing: "2.5px", fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" }}
             >
-              DefenCore
+              Defence Research and Development Organisation
             </span>
           </div>
           <div className="hidden sm:block font-semibold text-sm tracking-wide text-slate-200">
@@ -83,7 +83,7 @@ const Home = () => {
           {/* Login Card */}
           <section className="w-full md:w-1/2 px-8 py-10 flex flex-col justify-center">
             <h2 className="text-blue-900 text-2xl font-bold mb-2 text-center" style={{ fontFamily: "inherit" }}>
-              <span className="border-b-2 border-blue-800 pb-0.5">DefenCore Login</span>
+              <span className="border-b-2 border-blue-800 pb-0.5">DRDO Login</span>
             </h2>
             <p className="mb-6 text-center text-gray-500 text-sm font-medium">
               Authorized Access Only
@@ -170,10 +170,9 @@ const Home = () => {
           </aside>
         </div>
       </main>
-<p style={{ fontSize: '20px', color: 'black' }}><b>NOTE: Use credentials provided in resume to log in as Supervisor or Admin.</b></p>
       {/* Footer */}
       <footer className="bg-[#1b2940] text-white text-center py-2 border-t border-blue-900 text-xs">
-        &copy; {new Date().getFullYear()} DefenCore, India. All rights reserved.
+        &copy; {new Date().getFullYear()} DRDO, India. All rights reserved.
       </footer>
     </div>
   );
