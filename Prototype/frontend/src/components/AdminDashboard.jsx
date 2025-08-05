@@ -3,7 +3,7 @@ import axios from 'axios';
 import { FaSignOutAlt, FaSearch } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
-const DRDO_LOGO_URL = '/DrdoLogo.png';
+const DEFENCORE_LOGO_URL = '/DefenCoreLogo.png';
 
 export default function AdminDashboard() {
   const [scientists, setScientists] = useState([]);
@@ -84,9 +84,9 @@ export default function AdminDashboard() {
       <header className="bg-[#1b2940] text-white shadow relative z-30">
         <div className="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 lg:px-6">
           <div className="flex items-center gap-3">
-            <img src={DRDO_LOGO_URL} alt="DRDO Logo" className="h-10 w-10 rounded-full bg-white border border-blue-100 p-1 shadow" />
+            <img src={DEFENCORE_LOGO_URL} alt="DEFENCORE Logo" className="h-10 w-10 rounded-full bg-white border border-blue-100 p-1 shadow" />
             <span className="font-extrabold text-lg lg:text-xl uppercase tracking-wider">
-              Defence Research and Development Organisation
+              DefenCore
             </span>
           </div>
           <div className="flex items-center gap-6">
@@ -171,7 +171,7 @@ export default function AdminDashboard() {
 
       {/* Footer */}
       <footer className="bg-[#1b2940] text-white text-center py-2 text-xs border-t border-blue-900">
-        &copy; {new Date().getFullYear()} DRDO, India. All rights reserved.
+        &copy; {new Date().getFullYear()} DefenCore, India. All rights reserved.
       </footer>
     </div>
   );

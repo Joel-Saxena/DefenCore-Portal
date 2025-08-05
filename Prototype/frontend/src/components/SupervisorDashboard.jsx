@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
-const DRDO_LOGO_URL = '/DrdoLogo.png';
+const DEFENCORE_LOGO_URL = '/DefenCoreLogo.png';
 
 // eslint-disable-next-line no-unused-vars
 function SidebarButton({ icon: Icon, label, onClick }) {
@@ -39,7 +39,7 @@ function ModalCard({ title, onClose, children }) {
           <FaTimes />
         </button>
         <div className="flex flex-col items-center mb-2">
-          <img src={DRDO_LOGO_URL} alt="DRDO Logo" className="h-12 w-12 mb-2 rounded-full border shadow" />
+          <img src={DEFENCORE_LOGO_URL} alt="DEFENCORE Logo" className="h-12 w-12 mb-2 rounded-full border shadow" />
           <h2 className="text-lg font-extrabold text-blue-900 text-center uppercase tracking-wider">{title}</h2>
           <div className="w-10 h-1 bg-blue-900 rounded-full mt-2" />
         </div>
@@ -230,7 +230,7 @@ export default function SupervisorDashboard() {
         >
           <FaTimes />
         </button>
-        <img src={DRDO_LOGO_URL} alt="Sidebar DRDO Logo" className="h-12 w-12 mb-3 rounded-full border bg-white shadow border-blue-100 p-1" />
+        <img src={DEFENCORE_LOGO_URL} alt="Sidebar DEFENCORE Logo" className="h-12 w-12 mb-3 rounded-full border bg-white shadow border-blue-100 p-1" />
         <h2 className="text-lg font-bold mb-7 tracking-wide">Supervisor Panel</h2>
         {sidebarOptions.map(opt =>
           <SidebarButton
@@ -263,14 +263,11 @@ export default function SupervisorDashboard() {
             >
               <FaBars />
             </button>
-            <img src={DRDO_LOGO_URL} alt="DRDO Logo" className="h-10 w-10 rounded-full bg-white border border-blue-100 p-1 shadow" />
+            <img src={DEFENCORE_LOGO_URL} alt="DEFENCORE Logo" className="h-10 w-10 rounded-full bg-white border border-blue-100 p-1 shadow" />
             <span className="font-extrabold text-lg lg:text-xl uppercase tracking-wider">
-            Defence Research and Development Organisation
+            DefenCore
             </span>
           </div>
-          <span className="hidden sm:block font-semibold text-xs tracking-wider text-slate-200">
-            Ministry of Defence, Govt. of India
-          </span>
         </div>
         <div className="w-full h-1 bg-gradient-to-r from-[#0a58aa] via-[#1464c8] to-[#00a3db]" />
       </header>
@@ -378,7 +375,7 @@ export default function SupervisorDashboard() {
       </main>
       {/* Footer */}
       <footer className="bg-[#1b2940] text-white text-center py-2 text-xs border-t border-blue-900">
-        &copy; {new Date().getFullYear()} DRDO, India. All rights reserved.
+        &copy; {new Date().getFullYear()} DefenCore. All rights reserved.
       </footer>
     </div>
   );

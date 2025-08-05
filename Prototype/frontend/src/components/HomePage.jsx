@@ -35,7 +35,7 @@ export default function AdminLanding() {
     {
       icon: <FiUsers className="text-[#1a3a70]" size={24} />,
       title: "Personnel Management",
-      description: "Role-based access control for all DRDO staff with advanced security protocols."
+      description: "Role-based access control for all DefenCore staff with advanced security protocols."
     },
     {
       icon: <FiFileText className="text-[#1a3a70]" size={24} />,
@@ -79,7 +79,7 @@ export default function AdminLanding() {
 
   const stats = [
     { value: "850+", label: "Administrators" },
-    { value: "52", label: "DRDO Labs" },
+    { value: "52", label: "DefenCore Labs" },
     { value: "99.99%", label: "Uptime" },
     { value: "256-bit", label: "Encryption" }
   ];
@@ -95,7 +95,7 @@ export default function AdminLanding() {
       >
         <div className="flex items-center space-x-2">
           <FiLock className="text-[#7a9eff] animate-pulse" size={16} />
-          <span className="font-mono tracking-wider">DRDO SECURE ADMIN PORTAL - CLASSIFIED ACCESS ONLY</span>
+          <span className="font-mono tracking-wider">DEFENCORE SECURE ADMIN PORTAL - CLASSIFIED ACCESS ONLY</span>
         </div>
         <div className="font-mono text-xs bg-[#1b2940]/80 px-3 py-1 rounded-full border border-[#7a9eff]/20">
           {currentDate}
@@ -106,12 +106,6 @@ export default function AdminLanding() {
       <section className="relative overflow-hidden min-h-[90vh] flex items-center">
         {/* Dynamic Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0 opacity-80">
-          <img 
-            src="/bg.png"  // High-res DRDO lab/tech image
-            alt="DRDO Laboratory" 
-            className="w-full h-full object-cover object-center"
-            loading="eager"  // Prioritize loading
-          />
           <div className="absolute inset-0"></div>
         </div>
 
@@ -134,15 +128,15 @@ export default function AdminLanding() {
                   whileHover={{ scale: 1.05, rotate: 5 }}
                   className="bg-white/90 p-4 rounded-full shadow-2xl backdrop-blur-sm border-2 border-white/20"
                 >
-                  <img src="/DrdoLogo.png" alt="DRDO Logo" className="h-24 w-24" />
+                  <img src="/DefenCoreLogo.png" alt="DEFENCORE Logo" className="h-24 w-24" />
                 </motion.div>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#c9d8ff]">SSPL</span>{' '}
+                <span className="bg-clip-text text-transparent bg-[#7a9eff]">DefenCore</span>{' '}
                 <span className="text-[#7a9eff]">Administration Portal</span>
               </h1>
               <p className="text-xl text-[#c9d8ff] max-w-3xl mx-auto lg:mx-0 leading-relaxed mb-10">
-                Secure, efficient management system for DRDO's classified administrative operations with military-grade encryption.
+                Secure, efficient management system for DefenCore's classified administrative operations with military-grade encryption.
               </p>
 
               {/* Stats Grid */}
@@ -227,7 +221,7 @@ export default function AdminLanding() {
                   <div className="text-center text-sm text-gray-600 space-y-2">
                     <div className="flex items-center justify-center space-x-4">
                       <FiGlobe className="text-[#1a3a70]" />
-                      <span>Restricted to DRDO Intranet Only</span>
+                      <span>Restricted to DefenCore Intranet Only</span>
                     </div>
                     <Link to="/help" className="text-[#1a3a70] hover:text-[#1b2940] inline-flex items-center font-medium">
                       <FiActivity className="mr-2" size={14} />
@@ -261,7 +255,7 @@ export default function AdminLanding() {
                 </h2>
                 <div className="prose text-gray-700">
                   <p className="text-lg">
-                    The DRDO Administration Portal is a secure, centralized platform designed exclusively for authorized 
+                    The DefenCore Administration Portal is a secure, centralized platform designed exclusively for authorized 
                     administrative personnel to manage the organization's critical operations with military-grade security protocols.
                   </p>
                   <div className="space-y-4 mt-6">
@@ -295,7 +289,7 @@ export default function AdminLanding() {
                     <div className="relative z-10 p-8 text-center">
                       <FiAward className="mx-auto mb-6 text-[#7a9eff]" size={48} />
                       <h3 className="text-2xl font-bold text-white mb-2">Trusted by 850+ Security-Cleared Administrators</h3>
-                      <p className="text-[#c9d8ff]">Across all 52 DRDO laboratories nationwide</p>
+                      <p className="text-[#c9d8ff]">Across all 52 DefenCore laboratories nationwide</p>
                     </div>
                   </div>
                 </div>
@@ -459,11 +453,11 @@ export default function AdminLanding() {
                 whileHover={{ scale: 1.02 }}
                 className="flex items-center space-x-3 mb-5"
               >
-                <img src="/DrdoLogo.png" alt="DRDO Logo" className="h-12 w-12" />
-                <span className="text-white font-bold text-lg">DRDO Admin Portal</span>
+                <img src="/DefenCoreLogo.png" alt="DefenCore Logo" className="h-12 w-12" />
+                <span className="text-white font-bold text-lg">DefenCore Admin Portal</span>
               </motion.div>
               <p className="text-sm text-[#c9d8ff]/80">
-                The official secure administration system for Defence Research and Development Organisation.
+                The official secure administration system for DefenCore.
               </p>
             </div>
             <div>
@@ -509,15 +503,15 @@ export default function AdminLanding() {
             <div>
               <h4 className="text-white text-sm font-semibold mb-5 uppercase tracking-wider">Contact</h4>
               <address className="not-italic text-sm space-y-3">
-                <p className="text-[#c9d8ff]/80">DRDO Headquarters, Delhi</p>
+                <p className="text-[#c9d8ff]/80">DefenCore Headquarters, Delhi</p>
                 <motion.p whileHover={{ x: 5 }}>
                   <Link to="tel:+911123456789" className="hover:text-[#7a9eff] hover:underline flex items-center">
                     <FiChevronRight className="mr-2 text-xs opacity-70" /> +91 11 2345 6789
                   </Link>
                 </motion.p>
                 <motion.p whileHover={{ x: 5 }}>
-                  <Link to="mailto:admin-support@drdo.in" className="hover:text-[#7a9eff] hover:underline flex items-center">
-                    <FiChevronRight className="mr-2 text-xs opacity-70" /> admin-support@drdo.in
+                  <Link to="mailto:admin-support@defencore.in" className="hover:text-[#7a9eff] hover:underline flex items-center">
+                    <FiChevronRight className="mr-2 text-xs opacity-70" /> admin-support@defencore.in
                   </Link>
                 </motion.p>
               </address>
@@ -530,7 +524,7 @@ export default function AdminLanding() {
             viewport={{ once: true }}
             className="mt-16 pt-8 border-t border-[#1a3a70] text-sm text-center text-[#c9d8ff]/60"
           >
-            <p>© {new Date().getFullYear()} Defence Research and Development Organisation, Ministry of Defence, Government of India. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} DefenCore. All rights reserved.</p>
           </motion.div>
         </div>
       </motion.footer>

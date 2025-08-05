@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const DEFENCORE_LOGO_URL = "/DrdoLogo.png"; // Use your actual logo path
+const DEFENCORE_LOGO_URL = "/DefenCoreLogo.png"; // Use your actual logo path
 
 const Home = () => {
   const [login, setLogin] = useState({ employeeId: "", password: "" });
@@ -67,11 +67,8 @@ const Home = () => {
             <span className="font-extrabold tracking-widest text-xl lg:text-2xl uppercase"
                   style={{ letterSpacing: "2.5px", fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" }}
             >
-              Defence Research and Development Organisation
+              DefenCore
             </span>
-          </div>
-          <div className="hidden sm:block font-semibold text-sm tracking-wide text-slate-200">
-            Ministry of Defence, Govt. of India
           </div>
         </div>
         <div className="w-full h-1 bg-gradient-to-r from-[#0a58aa] via-[#1464c8] to-[#00a3db]" />
@@ -83,7 +80,7 @@ const Home = () => {
           {/* Login Card */}
           <section className="w-full md:w-1/2 px-8 py-10 flex flex-col justify-center">
             <h2 className="text-blue-900 text-2xl font-bold mb-2 text-center" style={{ fontFamily: "inherit" }}>
-              <span className="border-b-2 border-blue-800 pb-0.5">DRDO Login</span>
+              <span className="border-b-2 border-blue-800 pb-0.5">DefenCore Login</span>
             </h2>
             <p className="mb-6 text-center text-gray-500 text-sm font-medium">
               Authorized Access Only
@@ -155,6 +152,7 @@ const Home = () => {
                 {loading ? "Signing in..." : "Login"}
               </button>
             </form>
+            
           </section>
           {/* Right Info Panel */}
           <aside className="hidden md:flex md:w-1/2 flex-col items-center justify-center bg-gradient-to-tr from-[#1b2940]  to-[#2550A6] text-white p-6">
@@ -163,16 +161,21 @@ const Home = () => {
               Digital Scientist Portal
             </h3>
             <div className="w-9 h-0.5 rounded-full bg-blue-300 mb-2"></div>
-            <p className="text-xs text-blue-50 text-center leading-snug">
-              Ministry of Defence, Government of India <br />
-              <span className="font-medium text-gray-100">Empowering scientists and administrators</span>
-            </p>
           </aside>
         </div>
       </main>
+      {/* Demo Credentials Box */}
+<div className="mt-6 p-4 bg-gradient-to-r from-blue-100 to-blue-200 border border-blue-300 rounded-lg shadow-md text-sm">
+  <h3 className="text-blue-900 font-semibold text-center mb-2">🎯 Demo Credentials</h3>
+  <div className="space-y-1 text-gray-800">
+    <p><span className="font-medium">🔹 Supervisor</span> — ID: <code className="bg-white px-1 rounded">1</code> | Password: <code className="bg-white px-1 rounded">123</code></p>
+    <p><span className="font-medium">🔹 Admin</span> — ID: <code className="bg-white px-1 rounded">4</code> | Password: <code className="bg-white px-1 rounded">123</code></p>
+  </div>
+</div>
+
       {/* Footer */}
       <footer className="bg-[#1b2940] text-white text-center py-2 border-t border-blue-900 text-xs">
-        &copy; {new Date().getFullYear()} DRDO, India. All rights reserved.
+        &copy; {new Date().getFullYear()} DefenCore, India. All rights reserved.
       </footer>
     </div>
   );
