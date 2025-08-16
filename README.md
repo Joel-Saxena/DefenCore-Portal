@@ -6,7 +6,7 @@ A full-stack internal portal for role-based management of scientists and adminis
 
 - **Frontend**: React.js, Tailwind CSS  
 - **Backend**: Node.js, Express.js  
-- **Database**: MongoDB (Mongoose)  
+- **Database**: MySQL
 - **Auth**: JWT
 
 ## 🔐 Roles & Access
